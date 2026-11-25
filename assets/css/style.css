@@ -1,0 +1,102 @@
+/* DXDIMIX 共通スタイル。色や文字サイズは :root の値を変えれば全ページに反映される */
+:root {
+  --c-main: #0f6e8c;      /* メインカラー（青緑） */
+  --c-main-dark: #0a4f66;
+  --c-accent: #e8813a;    /* 強調色（オレンジ） */
+  --c-text: #1f2a30;
+  --c-sub: #5b6b73;
+  --c-bg: #ffffff;
+  --c-bg-soft: #f2f7f9;
+  --c-line: #d9e4e8;
+  --radius: 12px;
+  --max: 1080px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+  color: var(--c-text);
+  background: var(--c-bg);
+  line-height: 1.8;
+  font-size: 16px;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--c-main); }
+
+.container { max-width: var(--max); margin: 0 auto; padding: 0 16px; }
+
+/* ヘッダー */
+.site-header {
+  position: sticky; top: 0; z-index: 10;
+  background: rgba(255,255,255,.95);
+  border-bottom: 1px solid var(--c-line);
+}
+.site-header .container {
+  display: flex; align-items: center; justify-content: space-between;
+  min-height: 64px; gap: 16px; flex-wrap: wrap;
+}
+.logo { font-weight: 700; font-size: 1.3rem; letter-spacing: .06em; color: var(--c-text); text-decoration: none; }
+.logo span { color: var(--c-main); }
+.nav { display: flex; gap: 20px; flex-wrap: wrap; }
+.nav a { color: var(--c-text); text-decoration: none; font-size: .95rem; }
+.nav a:hover, .nav a[aria-current="page"] { color: var(--c-main); }
+
+/* ファーストビュー */
+.hero { background: linear-gradient(135deg, var(--c-main-dark), var(--c-main)); color: #fff; padding: 88px 0 80px; }
+.hero h1 { font-size: clamp(1.7rem, 4.5vw, 2.6rem); line-height: 1.4; margin: 0 0 16px; }
+.hero p { margin: 0 0 28px; max-width: 640px; opacity: .95; }
+.page-hero { background: var(--c-bg-soft); padding: 56px 0 40px; border-bottom: 1px solid var(--c-line); }
+.page-hero h1 { margin: 0 0 8px; font-size: clamp(1.5rem, 4vw, 2.1rem); }
+.page-hero p { margin: 0; color: var(--c-sub); }
+
+/* ボタン */
+.btn {
+  display: inline-block; padding: 12px 28px; border-radius: 999px;
+  background: var(--c-accent); color: #fff; font-weight: 700; text-decoration: none;
+}
+.btn:hover { opacity: .9; }
+.btn-outline { background: transparent; border: 2px solid currentColor; color: inherit; }
+
+/* セクション */
+section { padding: 72px 0; }
+section.soft { background: var(--c-bg-soft); }
+.section-title { text-align: center; font-size: clamp(1.4rem, 3.5vw, 1.9rem); margin: 0 0 12px; }
+.section-lead { text-align: center; color: var(--c-sub); margin: 0 auto 40px; max-width: 680px; }
+
+/* サービスカード */
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+.card {
+  background: #fff; border: 1px solid var(--c-line); border-radius: var(--radius);
+  padding: 32px 28px; display: flex; flex-direction: column;
+}
+.card .tag { font-size: .8rem; color: var(--c-main); font-weight: 700; letter-spacing: .08em; }
+.card h3 { font-size: 1.5rem; margin: 4px 0 12px; }
+.card p { margin: 0 0 20px; flex: 1; }
+.card .btn { align-self: flex-start; }
+
+/* 箇条書き・表 */
+.points { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; padding: 0; list-style: none; }
+.points li { background: #fff; border: 1px solid var(--c-line); border-radius: var(--radius); padding: 24px; }
+.points strong { display: block; color: var(--c-main); margin-bottom: 6px; }
+.info-table { width: 100%; border-collapse: collapse; }
+.info-table th, .info-table td { text-align: left; padding: 14px 12px; border-bottom: 1px solid var(--c-line); vertical-align: top; }
+.info-table th { width: 30%; color: var(--c-sub); font-weight: 500; }
+
+.todo { background: #fff4d6; padding: 0 4px; border-radius: 4px; }
+
+/* お問い合わせ帯 */
+.cta { background: var(--c-main-dark); color: #fff; text-align: center; }
+.cta p { opacity: .9; }
+
+/* フッター */
+.site-footer { background: #13232a; color: #c7d3d8; padding: 32px 0; font-size: .9rem; }
+.site-footer .container { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+.site-footer a { color: #c7d3d8; }
+
+@media (max-width: 640px) {
+  section { padding: 56px 0; }
+  .nav { gap: 14px; }
+  .info-table th { width: 38%; }
+}
