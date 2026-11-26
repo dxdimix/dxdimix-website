@@ -3,45 +3,110 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>お問い合わせ｜DXDIMIX</title>
-<meta name="description" content="DXDIMIXへのお問い合わせ方法のご案内です。">
-<meta property="og:title" content="お問い合わせ｜DXDIMIX">
-<meta property="og:description" content="DXDIMIXへのお問い合わせ方法のご案内です。">
+<title>お問い合わせ｜DimiX</title>
+<meta name="description" content="DimiXへのお問い合わせ方法のご案内です。医療機器管理システム「NOTYCE」、医療特化型動画編集サービス「メディクリ」のご相談・お見積もりはメールで承ります。">
+<meta property="og:title" content="お問い合わせ｜DimiX">
+<meta property="og:description" content="NOTYCE・メディクリのご相談・お見積もりはこちらから。">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://dxdimix.com/contact.html">
+<meta property="og:image" content="https://dxdimix.com/assets/img/dimix_logo.png">
+<meta property="og:site_name" content="DimiX">
+<meta property="og:locale" content="ja_JP">
+<link rel="canonical" href="https://dxdimix.com/contact.html">
+<link rel="icon" href="assets/img/dimix_icon.png">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+<a class="skip-link" href="#main">本文へ移動</a>
 <header class="site-header">
   <div class="container">
-    <a class="logo" href="index.html">DX<span>DIMIX</span></a>
+    <a class="logo" href="index.html"><img src="assets/img/dimix_logo.png" alt="DimiX トップページ" width="124" height="40"></a>
+    <a class="header-cta" href="contact.html">お問い合わせ</a>
     <nav class="nav" aria-label="メインメニュー">
       <a href="index.html">トップ</a>
-      <a href="services/medicli.html">メディクリ</a>
       <a href="services/notyce.html">NOTYCE</a>
-      <a href="about.html">事業者情報</a>
-      <a href="contact.html" aria-current="page">お問い合わせ</a>
+      <a href="services/medicli.html">メディクリ</a>
+      <a href="about.html">会社情報</a>
+      <a class="nav-cta" href="contact.html" aria-current="page">お問い合わせ</a>
     </nav>
   </div>
 </header>
-<main>
+<main id="main">
 <section class="page-hero"><div class="container">
   <h1>お問い合わせ</h1>
-  <p>サービス内容・料金・導入のご相談は、下記までご連絡ください。</p>
+  <p>サービス内容・料金・導入のご相談は、メールで承ります。</p>
 </div></section>
-<section><div class="container">
-  <table class="info-table">
-    <tr><th>メール</th><td><span class="todo">（問い合わせ用メールアドレスを入れる）</span></td></tr>
-    <tr><th>電話</th><td><span class="todo">（載せる場合は番号を入れる。載せない場合は行ごと削除）</span></td></tr>
-    <tr><th>受付時間</th><td><span class="todo">（例：平日 9:00〜18:00）</span></td></tr>
-  </table>
-  <!-- 入力フォームを付ける場合は Googleフォーム の埋め込みが手軽（GitHub Pages は送信処理を持てないため） -->
+<section><div class="container narrow">
+  <div class="contact-panel">
+    <form id="contact-form" onsubmit="return false">
+      <fieldset class="service-choice">
+        <legend>お問い合わせの内容を選んでください</legend>
+        <div class="opts">
+          <label><input type="radio" name="service" value="notyce" checked>NOTYCE</label>
+          <label><input type="radio" name="service" value="medicli">メディクリ</label>
+          <label><input type="radio" name="service" value="other">その他</label>
+        </div>
+      </fieldset>
+    </form>
+    <p>下のボタンを押すと、メールソフトが開き、件名と記入欄が入った状態になります。</p>
+    <div class="btn-row" style="margin-bottom:24px">
+      <a id="mail-btn" class="btn" href="mailto:shibata.k@dxdimix.com?subject=%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#i-mail"/></svg>メールで問い合わせる</a>
+    </div>
+    <p class="small" style="margin:0">メールソフトが開かない場合は、次のアドレスへ直接お送りください。</p>
+    <p class="mail-address" style="margin:4px 0 0"><a href="mailto:shibata.k@dxdimix.com">shibata.k@dxdimix.com</a></p>
+  </div>
+  <h2 class="subhead" style="margin-top:40px">お問い合わせの際にお知らせいただきたいこと</h2>
+  <ul class="note-list" style="margin-top:0">
+    <li>施設名・ご担当者名・ご連絡先</li>
+    <li>NOTYCE の場合：管理している機器のおおよその台数、今の管理方法（紙・Excel など）</li>
+    <li>メディクリの場合：動画の用途、完成動画のおおよその長さ、ご希望のプラン・時期</li>
+  </ul>
 </div></section>
 </main>
 <footer class="site-footer">
   <div class="container">
-    <div>DXDIMIX</div>
-    <div><a href="about.html">事業者情報</a>　<a href="contact.html">お問い合わせ</a></div>
-    <div>&copy; 2026 DXDIMIX</div>
+    <div>
+      <img src="assets/img/dimix_wordmark_white.png" alt="DimiX" width="112" height="44">
+    </div>
+    <nav class="footer-nav" aria-label="フッターメニュー">
+      <a href="index.html">トップ</a>
+      <a href="services/notyce.html">NOTYCE</a>
+      <a href="services/medicli.html">メディクリ</a>
+      <a href="about.html">会社情報</a>
+      <a href="contact.html">お問い合わせ</a>
+    </nav>
+    <div class="copyright">&copy; 2026 DimiX</div>
   </div>
 </footer>
-</body></html>
+<script>
+// サービスの選択に合わせてメールの件名と本文のひな形を作る。
+// 各ページのボタンは contact.html?service=notyce / medicli（&plan=light など）で来るので、それを初期選択にする。
+(function () {
+  var ADDRESS = 'shibata.k@dxdimix.com';
+  var NAMES = { notyce: 'NOTYCE', medicli: 'メディクリ', other: 'その他' };
+  var PLANS = { light: 'ライトプラン', standard: 'スタンダードプラン', premium: 'プレミアムプラン' };
+  var params = new URLSearchParams(location.search);
+  var plan = PLANS[params.get('plan')] || '';
+  var pre = params.get('service');
+  if (NAMES[pre] && pre !== 'other') {
+    var r = document.querySelector('input[name="service"][value="' + pre + '"]');
+    if (r) r.checked = true;
+  }
+  function body(service) {
+    var lines = ['施設名・会社名：', 'ご担当者名：', 'ご連絡先（電話など）：', ''];
+    if (service === 'notyce') lines.push('管理している機器のおおよその台数：', '今の管理方法（紙・Excel など）：', '');
+    if (service === 'medicli') lines.push('ご希望のプラン：' + plan, '動画の用途：', '完成動画のおおよその長さ：', 'ご希望の時期：', '');
+    lines.push('お問い合わせ内容：', '');
+    return lines.join('\n');
+  }
+  function update() {
+    var service = document.querySelector('input[name="service"]:checked').value;
+    var subject = '【' + NAMES[service] + '】お問い合わせ';
+    document.getElementById('mail-btn').href = 'mailto:' + ADDRESS + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body(service));
+  }
+  document.querySelectorAll('input[name="service"]').forEach(function (r) { r.addEventListener('change', update); });
+  update();
+})();
+</script>
+</body>
+</html>

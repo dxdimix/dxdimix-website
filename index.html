@@ -3,68 +3,219 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DXDIMIX｜医療向け動画編集「メディクリ」・医療機器管理「NOTYCE」</title>
-<meta name="description" content="DXDIMIXは、医療機関向けの動画編集サービス「メディクリ」と医療機器管理システム「NOTYCE」を提供しています。">
-<meta property="og:title" content="DXDIMIX｜医療向け動画編集「メディクリ」・医療機器管理「NOTYCE」">
-<meta property="og:description" content="DXDIMIXは、医療機関向けの動画編集サービス「メディクリ」と医療機器管理システム「NOTYCE」を提供しています。">
+<title>DimiX｜医療機器管理システム NOTYCE・医療特化型動画編集 メディクリ</title>
+<meta name="description" content="DimiXは、臨床工学技士の現場経験から生まれた医療機器管理システム「NOTYCE（ノーティス）」と、医療特化型動画編集サービス「メディクリ」を提供しています。">
+<meta property="og:title" content="DimiX｜医療機器管理システム NOTYCE・医療特化型動画編集 メディクリ">
+<meta property="og:description" content="私だけの気づきから、みんなの気づきへ。医療機器管理を、もっと簡単に。もっと安全に。">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://dxdimix.com/">
+<meta property="og:image" content="https://dxdimix.com/assets/img/dimix_logo.png">
+<meta property="og:site_name" content="DimiX">
+<meta property="og:locale" content="ja_JP">
+<link rel="canonical" href="https://dxdimix.com/">
+<link rel="icon" href="assets/img/dimix_icon.png">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+<a class="skip-link" href="#main">本文へ移動</a>
 <header class="site-header">
   <div class="container">
-    <a class="logo" href="index.html">DX<span>DIMIX</span></a>
+    <a class="logo" href="index.html"><img src="assets/img/dimix_logo.png" alt="DimiX トップページ" width="124" height="40"></a>
+    <a class="header-cta" href="contact.html">お問い合わせ</a>
     <nav class="nav" aria-label="メインメニュー">
       <a href="index.html" aria-current="page">トップ</a>
-      <a href="services/medicli.html">メディクリ</a>
       <a href="services/notyce.html">NOTYCE</a>
-      <a href="about.html">事業者情報</a>
-      <a href="contact.html">お問い合わせ</a>
+      <a href="services/medicli.html">メディクリ</a>
+      <a href="about.html">会社情報</a>
+      <a class="nav-cta" href="contact.html">お問い合わせ</a>
     </nav>
   </div>
 </header>
-<main>
-<section class="hero">
+
+<main id="main">
+<!-- ファーストビュー：NOTYCE のメインメッセージ -->
+<section class="hero" aria-labelledby="hero-title">
   <div class="container">
-    <h1>医療機関の動画制作と、<br>医療機器の管理をお手伝いします。</h1>
-    <p>DXDIMIXは、医療機関向けの動画編集サービス「メディクリ」と、医療機器管理システム「NOTYCE」を提供しています。</p>
-    <a class="btn" href="#services">サービスを見る</a>
+    <div>
+      <span class="hero-brand">医療機器管理システム NOTYCE（ノーティス）</span>
+      <h1 id="hero-title">私だけの気づきから、<br>みんなの気づきへ。</h1>
+      <p class="sub">医療機器管理を、もっと簡単に。もっと安全に。</p>
+      <p class="lead">NOTYCEは、病院の医療機器を台帳・点検・修理・貸出までまとめて管理できるクラウドサービスです。点検期限や機器の状態といった“気づき”を、必要な人へ届けます。</p>
+      <div class="btn-row">
+        <a class="btn" href="contact.html?service=notyce">お問い合わせ<svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#i-arrow"/></svg></a>
+        <a class="btn btn-outline" href="services/notyce.html">NOTYCEを詳しく見る</a>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <!-- 一人の気づき（スマホ）がチームへ共有されるイメージ -->
+      <svg viewBox="0 0 480 400" role="presentation">
+        <defs>
+          <linearGradient id="hv-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1d5bd8"/><stop offset="1" stop-color="#1565c0"/></linearGradient>
+        </defs>
+        <circle cx="250" cy="200" r="170" fill="#e8f1fb"/>
+        <circle cx="250" cy="200" r="120" fill="#fff" opacity=".7"/>
+        <!-- スマホ -->
+        <rect x="70" y="60" width="150" height="290" rx="22" fill="#fff" stroke="#141c52" stroke-width="3"/>
+        <rect x="120" y="72" width="50" height="6" rx="3" fill="#dbe4ee"/>
+        <rect x="86" y="96" width="118" height="20" rx="6" fill="url(#hv-g)"/>
+        <text x="96" y="110" font-size="11" fill="#fff" font-weight="700" font-family="sans-serif">本日の点検</text>
+        <g font-family="sans-serif" font-size="10" fill="#14233a">
+          <rect x="86" y="126" width="118" height="42" rx="8" fill="#f4f8fc" stroke="#dbe4ee"/>
+          <text x="96" y="143">輸液ポンプ No.12</text>
+          <rect x="96" y="150" width="46" height="12" rx="6" fill="#fde9d2"/><text x="101" y="159" font-size="8" fill="#8a4b0f">期限 3日後</text>
+          <rect x="86" y="176" width="118" height="42" rx="8" fill="#f4f8fc" stroke="#dbe4ee"/>
+          <text x="96" y="193">シリンジポンプ No.4</text>
+          <rect x="96" y="200" width="38" height="12" rx="6" fill="#e3f4f3"/><text x="101" y="209" font-size="8" fill="#0b5c58">点検済</text>
+          <rect x="86" y="226" width="118" height="42" rx="8" fill="#f4f8fc" stroke="#dbe4ee"/>
+          <text x="96" y="243">人工呼吸器 No.2</text>
+          <rect x="96" y="250" width="42" height="12" rx="6" fill="#e8f1fb"/><text x="101" y="259" font-size="8" fill="#1546a8">対応中</text>
+        </g>
+        <rect x="100" y="286" width="90" height="44" rx="10" fill="#fff" stroke="#dbe4ee"/>
+        <g transform="translate(130 293)" fill="none" stroke="#141c52" stroke-width="2"><rect x="0" y="0" width="12" height="12" rx="1"/><rect x="18" y="0" width="12" height="12" rx="1"/><rect x="0" y="18" width="12" height="12" rx="1"/><path d="M18 18h5v5h-5zM30 30h-6"/></g>
+        <!-- 共有の線 -->
+        <g fill="none" stroke="#1565c0" stroke-width="2" stroke-dasharray="4 6" stroke-linecap="round">
+          <path d="M222 150 C 290 120, 320 100, 360 92"/>
+          <path d="M222 200 C 290 200, 320 200, 372 200"/>
+          <path d="M222 250 C 290 280, 320 300, 360 310"/>
+        </g>
+        <!-- 受け取る人たち -->
+        <g>
+          <circle cx="392" cy="88" r="30" fill="#fff" stroke="#dbe4ee" stroke-width="2"/>
+          <circle cx="392" cy="80" r="8" fill="#1565c0"/><path d="M378 102c3-9 25-9 28 0" fill="#1565c0"/>
+          <circle cx="404" cy="200" r="30" fill="#fff" stroke="#dbe4ee" stroke-width="2"/>
+          <circle cx="404" cy="192" r="8" fill="#1d5bd8"/><path d="M390 214c3-9 25-9 28 0" fill="#1d5bd8"/>
+          <circle cx="392" cy="314" r="30" fill="#fff" stroke="#dbe4ee" stroke-width="2"/>
+          <circle cx="392" cy="306" r="8" fill="#0b8a86"/><path d="M378 328c3-9 25-9 28 0" fill="#0b8a86"/>
+        </g>
+        <!-- 通知のしるし -->
+        <circle cx="216" cy="70" r="16" fill="#1565c0"/>
+        <path d="M209 74h14M211 74c0-7 1-11 5-11s5 4 5 11M214 78h4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </div>
   </div>
 </section>
 
-<section id="services">
+<!-- NOTYCE 紹介 -->
+<section id="notyce" aria-labelledby="notyce-title">
+  <div class="container split">
+    <div>
+      <div class="product-label"><img src="assets/img/notyce_logo.png" alt="NOTYCE（ノーティス）" width="198" height="60"></div>
+      <span class="eyebrow ny">医療機器管理システム</span>
+      <h2 id="notyce-title">気づきをつなぎ、医療の安全を支える。</h2>
+      <p>NOTYCE（ノーティス）は、病院の医療機器を「台帳・点検・修理・貸出」まで丸ごと管理できるクラウドサービスです。現場のスマホ／PCからその場で記録でき、点検期限や機器の状態といった“気づき”を必要な人へ届けます。</p>
+      <p>導入の初期設定から運用まで私たちが伴走するので、少人数の部署でも紙やExcelの手間を減らせます。患者情報は扱わない安全設計です。</p>
+      <ul class="keyword-list ny" aria-label="NOTYCEの特長">
+        <li>台帳・点検・修理・貸出を一元管理</li>
+        <li>スマホでその場で記録</li>
+        <li>患者情報を保存しない設計</li>
+      </ul>
+      <div class="btn-row">
+        <a class="btn btn-ny" href="services/notyce.html">NOTYCEを詳しく見る<svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#i-arrow"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <ul class="values" aria-label="NOTYCEが大切にする5つの価値">
+        <li><div class="icon-wrap ny"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#i-bell"/></svg></div><span class="en">Awareness</span><span class="ja">気づき</span></li>
+        <li><div class="icon-wrap ny"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#i-share"/></svg></div><span class="en">Sharing</span><span class="ja">共有</span></li>
+        <li><div class="icon-wrap ny"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#i-shield"/></svg></div><span class="en">Safety</span><span class="ja">安全</span></li>
+        <li><div class="icon-wrap ny"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#i-hand"/></svg></div><span class="en">Simplicity</span><span class="ja">簡単・便利</span></li>
+        <li><div class="icon-wrap ny"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#i-gauge"/></svg></div><span class="en">Efficiency</span><span class="ja">効率化</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- メディクリ紹介 -->
+<section id="medicli" class="soft" aria-labelledby="medicli-title">
+  <div class="container split reverse">
+    <div>
+      <div class="product-label"><img src="assets/img/medicri_wordmark.png" alt="メディクリ Medical Creator" width="150" height="56"></div>
+      <span class="eyebrow">医療特化型動画編集サービス</span>
+      <h2 id="medicli-title">医療の知識を、伝わる動画に。</h2>
+      <p>メディクリは、臨床工学技士の医療現場での経験から生まれた、医療特化型動画編集サービスです。院内研修や勉強会、医療手技、業務マニュアルなどを、見やすく、わかりやすく、繰り返し活用できる動画教材へと仕上げます。</p>
+      <p>AIの効率性と人の専門性を組み合わせ、品質と価格の両立を実現。教育の効率化・標準化を通じて、人材育成と医療DXの推進をサポートします。</p>
+      <ul class="keyword-list" aria-label="メディクリのキーワード">
+        <li>医療専門職の知識</li>
+        <li>AI × 人による動画編集</li>
+        <li>教育コンテンツの資産化</li>
+        <li>オンライン対応</li>
+      </ul>
+      <div class="btn-row">
+        <a class="btn" href="services/medicli.html">サービス詳細を見る<svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#i-arrow"/></svg></a>
+      </div>
+    </div>
+    <div class="visual-card" aria-hidden="true">
+      <!-- 研修動画にテロップが入った再生画面のイメージ -->
+      <svg viewBox="0 0 480 330" role="presentation">
+        <rect x="0" y="0" width="480" height="270" rx="14" fill="#14233a"/>
+        <rect x="16" y="16" width="448" height="238" rx="8" fill="#203554"/>
+        <!-- 講師と スライド -->
+        <rect x="250" y="44" width="190" height="120" rx="6" fill="#fff"/>
+        <rect x="266" y="60" width="90" height="10" rx="5" fill="#1d5bd8"/>
+        <rect x="266" y="80" width="150" height="6" rx="3" fill="#dbe4ee"/>
+        <rect x="266" y="94" width="130" height="6" rx="3" fill="#dbe4ee"/>
+        <rect x="266" y="114" width="60" height="36" rx="4" fill="#e8f1fb"/>
+        <path d="M276 140l12-14 10 8 12-16" fill="none" stroke="#1d5bd8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="336" y="114" width="80" height="36" rx="4" fill="#e3f4f3"/>
+        <circle cx="140" cy="100" r="30" fill="#c9d8ec"/>
+        <path d="M84 196c8-40 104-40 112 0z" fill="#c9d8ec"/>
+        <rect x="128" y="150" width="24" height="30" fill="#fff" opacity=".7"/>
+        <!-- テロップ -->
+        <rect x="80" y="202" width="320" height="34" rx="6" fill="#fff" opacity=".95"/>
+        <text x="240" y="225" font-family="sans-serif" font-size="15" font-weight="700" fill="#14233a" text-anchor="middle">流量設定は 必ずダブルチェック</text>
+        <!-- 再生バー -->
+        <rect x="16" y="282" width="448" height="6" rx="3" fill="#dbe4ee"/>
+        <rect x="16" y="282" width="270" height="6" rx="3" fill="#1d5bd8"/>
+        <circle cx="286" cy="285" r="8" fill="#1d5bd8"/>
+        <path d="M24 306l12 8-12 8z" fill="#14233a"/>
+        <text x="48" y="319" font-family="sans-serif" font-size="12" fill="#4f5f73">18:24 / 30:00</text>
+        <rect x="380" y="304" width="40" height="20" rx="4" fill="#e8f1fb"/><text x="400" y="318" font-family="sans-serif" font-size="11" font-weight="700" fill="#1546a8" text-anchor="middle">字幕</text>
+        <rect x="428" y="304" width="36" height="20" rx="4" fill="#e8f1fb"/><text x="446" y="318" font-family="sans-serif" font-size="11" font-weight="700" fill="#1546a8" text-anchor="middle">HD</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 会社情報への導線 -->
+<section aria-labelledby="company-title">
   <div class="container">
-    <h2 class="section-title">サービス</h2>
-    <p class="section-lead">医療機関の情報発信と、院内の機器管理を支える2つのサービスです。</p>
-    <div class="cards">
-      <article class="card">
-        <div class="tag">動画編集サービス</div>
-        <h3>メディクリ</h3>
-        <p>医療機関向けの動画編集サービスです。<span class="todo">（ここにサービスの説明文を入れる：対象・内容・特長など）</span></p>
-        <a class="btn btn-outline" href="services/medicli.html">詳しく見る</a>
-      </article>
-      <article class="card">
-        <div class="tag">医療機器管理システム</div>
-        <h3>NOTYCE</h3>
-        <p>医療機器を管理するためのシステムです。<span class="todo">（ここにサービスの説明文を入れる：管理できる内容・特長など）</span></p>
-        <a class="btn btn-outline" href="services/notyce.html">詳しく見る</a>
-      </article>
+    <div class="company-box">
+      <img src="assets/img/dimix_logo.png" alt="DimiX" width="280" height="91">
+      <div>
+        <span class="eyebrow">会社情報</span>
+        <h2 id="company-title" class="section-title" style="text-align:left">「いつも」に、DXという選択を。</h2>
+        <p>DimiXは、臨床工学技士として医療現場で働いてきた経験をもとに、医療機関の業務を支えるサービスをつくっています。現場で感じた手間や不安を、ITの力で少しずつ減らしていくことを目指しています。</p>
+        <a class="btn btn-outline" href="about.html">会社情報を見る</a>
+      </div>
     </div>
   </div>
 </section>
 </main>
-<section class="cta">
+
+<section class="cta" aria-labelledby="cta-title">
   <div class="container">
-    <h2 class="section-title">ご相談・お見積りはお気軽に</h2>
-    <p>サービス内容や料金について、メールでお問い合わせください。</p>
-    <a class="btn" href="contact.html">お問い合わせはこちら</a>
+    <h2 id="cta-title">導入のご相談・お見積もりはお気軽に</h2>
+    <p>NOTYCE・メディクリについて、ご不明な点や導入のご相談がありましたら、お気軽にお問い合わせください。</p>
+    <div class="btn-row">
+      <a class="btn btn-white" href="contact.html">お問い合わせ<svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#i-arrow"/></svg></a>
+    </div>
   </div>
 </section>
+
 <footer class="site-footer">
   <div class="container">
-    <div>DXDIMIX</div>
-    <div><a href="about.html">事業者情報</a>　<a href="contact.html">お問い合わせ</a></div>
-    <div>&copy; 2026 DXDIMIX</div>
+    <div>
+      <img src="assets/img/dimix_wordmark_white.png" alt="DimiX" width="112" height="44">
+    </div>
+    <nav class="footer-nav" aria-label="フッターメニュー">
+      <a href="index.html">トップ</a>
+      <a href="services/notyce.html">NOTYCE</a>
+      <a href="services/medicli.html">メディクリ</a>
+      <a href="about.html">会社情報</a>
+      <a href="contact.html">お問い合わせ</a>
+    </nav>
+    <div class="copyright">&copy; 2026 DimiX</div>
   </div>
 </footer>
-</body></html>
+</body>
+</html>
