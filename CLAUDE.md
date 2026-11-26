@@ -9,7 +9,8 @@
 
 ## どこで動くか
 - 公開：GitHub Pages（リポジトリ `dxdimix/dxdimix-website` の `main` ブランチ直下をそのまま公開）
-- 独自ドメイン：`CNAME` ファイルに `dxdimix.com` を記載。DNS の設定手順は `docs/公開手順.md`
+- 独自ドメイン：`CNAME` ファイルに `dxdimix.com` を記載。DNS は Squarespace で管理（Google Workspace のメールと Vercel の別アプリのレコードも同居しているので、触るのは A `@` と CNAME `www` だけ）。詳細は `docs/公開手順.md`
+- HTTPS：GitHub Pages の「Enforce HTTPS」を有効化済み
 - ローカル：デスクトップ PC の `C:\Users\sike1\dev\dxdimix-website`
 - ビルド工程なし。HTML と CSS をそのまま置いている
 
