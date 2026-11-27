@@ -377,3 +377,19 @@ section.soft { background: var(--c-bg-soft); }
 .dash-points strong { display: block; color: var(--c-ny-dark); font-size: 1.05rem; margin-bottom: 6px; }
 @media (max-width: 720px) { .dash-points { grid-template-columns: 1fr; } }
 @media (max-width: 720px) { .overview-shots .shot-pc { display: none; } }
+/* 画面紹介は3列、分析は2列（幅の広い図は2列ぶん） */
+.screen-grid.cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+.analysis-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; align-items: start; }
+.analysis-grid .wide { grid-column: 1 / -1; }
+.analysis-grid img { box-shadow: 0 6px 20px rgba(20, 28, 82, .10); }
+.only-narrow { display: none; }
+.phone-pair { grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 32px; }
+@media (max-width: 960px) { .screen-grid.cols-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 720px) {
+  .screen-grid.cols-3, .analysis-grid { grid-template-columns: 1fr; }
+  .only-wide { display: none; }
+  .only-narrow { display: grid; }
+  .phone-pair .shot-sp { width: 100%; }
+  .analysis-grid .screen-card picture { width: 100%; }
+  .analysis-grid .screen-card img { border-radius: 12px; border: 1px solid var(--c-line); }
+}

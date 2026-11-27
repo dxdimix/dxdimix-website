@@ -95,7 +95,7 @@
 </section>
 
 <!-- ダッシュボード：やることがすぐわかる -->
-<section aria-labelledby="dash-title">
+<section class="soft" aria-labelledby="dash-title">
   <div class="container">
     <div class="section-head">
       <span class="eyebrow ny">DASHBOARD</span>
@@ -110,6 +110,31 @@
     <div class="shots overview-shots">
       <figure class="shot shot-pc"><img src="../assets/img/notyce-screens/01_dashboard_pc.webp" alt="NOTYCEのダッシュボード画面（PC）。管理台数・貸出中・待機中・点検完了率の数字と、今日の業務予定・返却棚・期限超過の点検・点検アラームなどの件数をまとめた「今日のやることリスト」" width="1440" height="900" loading="lazy" decoding="async"></figure>
       <figure class="shot shot-sp"><img src="../assets/img/notyce-screens/01_dashboard_sp.webp" alt="NOTYCEのダッシュボード画面（スマホ）" width="585" height="1266" loading="lazy" decoding="async"></figure>
+    </div>
+    <p class="small demo-note">※ 画面はデモ用の架空データで撮影しています。施設名・数値は実在のものではありません。</p>
+  </div>
+</section>
+
+<!-- 予定外の業務もその場で記録（素材 15・16） -->
+<section aria-labelledby="work-title">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow ny">QUICK ENTRY</span>
+      <h2 id="work-title" class="section-title">予定外の業務も、終わったその場で記録できる</h2>
+      <p class="section-lead">業務登録は、状態が「実施済」、日付が今日の状態で開きます。<br>タイトルと実施者を選んで「登録する」を押せば、その日の実施記録になります。</p>
+    </div>
+    <ul class="dash-points">
+      <li><strong>臨時の業務もすぐ残せる</strong>前もって予定を作っていない業務も、実施した記録としてそのまま登録できます。</li>
+      <li><strong>⭐ ショートカット</strong>よく行う業務を「ショートカットに保存」しておくと、どの画面からでも内容が入った状態で登録画面を開けます。</li>
+      <li><strong>予定として登録も可能</strong>状態を「未実施（予定）」にして担当者を選ぶと、その人のダッシュボードの「今日のやることリスト」に表示されます。</li>
+    </ul>
+    <div class="shots overview-shots only-wide">
+      <figure class="shot shot-pc"><img src="../assets/img/notyce-screens/16_work-entry_pc.webp" alt="NOTYCEの業務登録画面（PC）。タイトル「ICU 輸液ポンプのラウンド」、状態「実施済（記録：もう終わったこと）」、実施者、日付が入力され、「登録する」と「ショートカットに保存」のボタンがある" width="1440" height="900" loading="lazy" decoding="async"></figure>
+      <figure class="shot shot-sp"><img src="../assets/img/notyce-screens/15_shortcut_sp.webp" alt="NOTYCEの業務登録のショートカット（スマホ）。病棟ラウンド、ME室の清掃、消耗品の発注、業者立ち会いの4件が、実施者と所要時間つきで並ぶ" width="585" height="1266" loading="lazy" decoding="async"></figure>
+    </div>
+    <div class="phone-pair only-narrow">
+      <figure class="shot shot-sp"><img src="../assets/img/notyce-screens/15_shortcut_sp.webp" alt="NOTYCEの業務登録のショートカット（スマホ）" width="585" height="1266" loading="lazy" decoding="async"></figure>
+      <figure class="shot shot-sp"><img src="../assets/img/notyce-screens/16_work-entry_sp.webp" alt="NOTYCEの業務登録画面（スマホ）。状態は実施済、日付は今日で、「実施済として1件記録します」と表示されている" width="585" height="1266" loading="lazy" decoding="async"></figure>
     </div>
     <p class="small demo-note">※ 画面はデモ用の架空データで撮影しています。施設名・数値は実在のものではありません。</p>
   </div>
@@ -178,7 +203,7 @@
       <h2 id="screens-title" class="section-title">NOTYCEの画面</h2>
       <p class="section-lead">実際の画面です。PCでもスマホでも同じ内容を確認・入力できます。</p>
     </div>
-    <div class="screen-grid">
+    <div class="screen-grid cols-3">
       <figure class="screen-card">
         <picture>
           <source media="(max-width: 720px)" srcset="../assets/img/notyce-screens/03_maintenance_sp.webp" width="585" height="1266">
@@ -200,15 +225,51 @@
         </picture>
         <figcaption><strong>貸出・返却</strong>どの機器を、いつ、どの部署に貸し出しているかを記録し、返却までを追えます。</figcaption>
       </figure>
-      <figure class="screen-card">
-        <picture>
-          <source media="(max-width: 720px)" srcset="../assets/img/notyce-screens/10_analysis_sp.webp" width="585" height="1266">
-          <img src="../assets/img/notyce-screens/10_analysis_pc.webp" alt="NOTYCEの分析画面。KPIサマリーと分類別の稼働率表" width="1440" height="900" loading="lazy" decoding="async">
-        </picture>
-        <figcaption><strong>分析</strong>期間を指定して、管理台数・貸出件数・点検実施率・稼働率などを集計します。</figcaption>
-      </figure>
     </div>
     <p class="small demo-note">※ 画面はデモ用の架空データで撮影しています。画面に表示される施設名・機器の台数・数値は実在のものではありません。</p>
+  </div>
+</section>
+
+<!-- 分析（素材 17〜20。17 は左のカードだけ切り出し） -->
+<section class="soft" aria-labelledby="analysis-title">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow ny">ANALYSIS</span>
+      <h2 id="analysis-title" class="section-title">記録がたまると、グラフと表で振り返れる</h2>
+      <p class="section-lead">期間を指定して、故障・貸出・稼働率・費用を集計します。<br>日々の記録から自動で集計されるので、集計表を別に作る必要はありません。</p>
+    </div>
+    <div class="analysis-grid">
+      <figure class="screen-card">
+        <picture>
+          <img src="../assets/img/notyce-screens/19_analysis-lending_pc.webp" alt="NOTYCEの貸出分析。曜日別と時間帯別の貸出件数の棒グラフ" width="960" height="755" loading="lazy" decoding="async">
+        </picture>
+        <figcaption><strong>貸出分析</strong>曜日別・時間帯別の貸出件数</figcaption>
+      </figure>
+      <figure class="screen-card">
+        <picture>
+          <img src="../assets/img/notyce-screens/17_analysis-utilization_pc.webp" alt="NOTYCEの稼働率分析。大分類別と機種別の使用台数・稼働率の表" width="960" height="864" loading="lazy" decoding="async">
+        </picture>
+        <figcaption><strong>稼働率</strong>大分類別・機種別に、期間内に貸出のあった機器の割合</figcaption>
+      </figure>
+      <figure class="screen-card">
+        <picture>
+          <img src="../assets/img/notyce-screens/18a_analysis-failure-pie_pc.webp" alt="NOTYCEの故障分析。故障理由別内訳の円グラフ（落下・衝撃、水濡れ、原因不明、経年劣化、操作ミス）" width="960" height="386" loading="lazy" decoding="async">
+        </picture>
+        <figcaption><strong>故障分析</strong>故障理由の内訳と、機種別・メーカー別の故障件数・故障率</figcaption>
+      </figure>
+      <figure class="screen-card">
+        <picture>
+          <img src="../assets/img/notyce-screens/18b_analysis-failure-table_pc.webp" alt="NOTYCEの故障分析。機種別・メーカー別の故障件数と故障率の表" width="960" height="864" loading="lazy" decoding="async">
+        </picture>
+      </figure>
+      <figure class="screen-card wide">
+        <picture>
+          <img src="../assets/img/notyce-screens/20_analysis-cost_pc.webp" alt="NOTYCEの月次コスト推移。点検費用と修理費用の月ごとの合計の棒グラフ" width="1440" height="290" loading="lazy" decoding="async">
+        </picture>
+        <figcaption><strong>月次コスト推移</strong>点検費用と修理費用の月ごとの合計</figcaption>
+      </figure>
+    </div>
+    <p class="small demo-note">※ 画面はデモ用の架空データで撮影しています。グラフや表の数値は実績ではありません。</p>
   </div>
 </section>
 
