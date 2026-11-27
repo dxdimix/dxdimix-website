@@ -372,3 +372,8 @@ section.soft { background: var(--c-bg-soft); }
 .feature .shots { grid-column: 1 / -1; }
 .overview-shots { margin-top: 40px; }
 .overview-shots figcaption, .shots-caption { font-size: .9rem; color: var(--c-sub); margin-top: 10px; }
+.dash-points { list-style: none; padding: 0; margin: 32px 0 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.dash-points li { background: var(--c-ny-soft); border-radius: 14px; padding: 18px 20px; font-size: .95rem; color: var(--c-text); }
+.dash-points strong { display: block; color: var(--c-ny-dark); font-size: 1.05rem; margin-bottom: 6px; }
+@media (max-width: 720px) { .dash-points { grid-template-columns: 1fr; } }
+@media (max-width: 720px) { .overview-shots .shot-pc { display: none; } }
