@@ -10,6 +10,7 @@
   // ===== 料金データ ここから =====
   var LENGTHS = ['15分', '30分', '45分', '60分'];   // 完成動画の長さ
   var BASE_LENGTH_INDEX = 1;                         // カードに出す基本料金（30分）
+  var TAX = '税込';                                  // 料金はすべて税込（運営者確認済み 2026-11-27）
 
   var PLANS = [
     {
@@ -92,7 +93,7 @@
         '<div class="plan-en">' + esc(p.en) + '</div>' +
         '<h3 id="plan-' + p.id + '">' + esc(p.name) + '</h3>' +
         '<p class="plan-catch">' + esc(p.catch) + '</p>' +
-        '<p class="price">' + yen(p.prices[BASE_LENGTH_INDEX]) + '<small>／完成動画' + LENGTHS[BASE_LENGTH_INDEX] + '</small></p>' +
+        '<p class="price">' + yen(p.prices[BASE_LENGTH_INDEX]) + '<small>（' + TAX + '）／完成動画' + LENGTHS[BASE_LENGTH_INDEX] + '</small></p>' +
         '<p class="plan-desc">' + esc(p.desc) + '</p>' +
         '<h4>主な編集内容</h4>' +
         '<ul class="items">' + p.items.map(function (i) { return '<li>' + icon('i-check') + '<span>' + esc(i) + '</span></li>'; }).join('') + '</ul>' +
@@ -109,7 +110,7 @@
       return '<tr' + (p.recommend ? ' class="col-rec"' : '') + '><th scope="row">' + esc(p.name.replace('プラン', '')) + '</th>' +
         p.prices.map(function (v) { return '<td class="num">' + yen(v) + '</td>'; }).join('') + '</tr>';
     }).join('') + '</tbody>';
-    el.innerHTML = '<caption>完成動画の長さ別料金</caption>' + head + body;
+    el.innerHTML = '<caption>完成動画の長さ別料金（' + TAX + '）</caption>' + head + body;
   }
 
   function renderCompare(el) {
@@ -128,7 +129,7 @@
   }
 
   function renderSimple(el, rows, caption) {
-    el.innerHTML = '<caption>' + esc(caption) + '</caption><thead><tr><th scope="col">サービス</th><th scope="col">料金</th></tr></thead><tbody>' +
+    el.innerHTML = '<caption>' + esc(caption) + '（' + TAX + '）</caption><thead><tr><th scope="col">サービス</th><th scope="col">料金</th></tr></thead><tbody>' +
       rows.map(function (r) { return '<tr><th scope="row">' + esc(r[0]) + '</th><td class="num">' + esc(r[1]) + '</td></tr>'; }).join('') + '</tbody>';
   }
 
