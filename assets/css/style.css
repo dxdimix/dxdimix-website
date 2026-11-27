@@ -348,3 +348,24 @@ section.soft { background: var(--c-bg-soft); }
   .footer-nav { justify-content: flex-start; }
   .data-table th, .data-table td { padding: 10px 12px; }
 }
+
+/* NOTYCE の実画面（画像は加工せず、枠・角丸・影は CSS で付ける） */
+.feature .shots { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 200px; gap: 24px; align-items: end; margin-top: 8px; }
+.shot { margin: 0; }
+.shot img { width: 100%; height: auto; display: block; border: 1px solid var(--c-line); box-shadow: 0 10px 30px rgba(20, 28, 82, .12); background: #fff; }
+.shot-pc img { border-radius: 12px; }
+.shot-sp img { border-radius: 24px; border: 6px solid var(--c-ny-dark); }
+.screen-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; }
+.screen-card { margin: 0; }
+.screen-card img { width: 100%; height: auto; display: block; border-radius: 12px; border: 1px solid var(--c-line); box-shadow: 0 10px 30px rgba(20, 28, 82, .12); background: #fff; }
+.screen-card figcaption { margin-top: 14px; color: var(--c-sub); font-size: .95rem; }
+.screen-card figcaption strong { display: block; color: var(--c-ny-dark); font-size: 1.1rem; margin-bottom: 4px; }
+.demo-note { margin-top: 24px; }
+@media (max-width: 720px) {
+  .feature .shots { grid-template-columns: 1fr; justify-items: center; }
+  .shot-pc { width: 100%; }
+  .shot-sp { width: 62%; }
+  .screen-grid { grid-template-columns: 1fr; gap: 40px; }
+  .screen-card picture { display: block; width: 72%; margin: 0 auto; }
+  .screen-card img { border-radius: 24px; border: 6px solid var(--c-ny-dark); }
+}

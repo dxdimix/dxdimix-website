@@ -113,6 +113,10 @@
           <p>機器を台帳化し、定期点検の予定を月単位で管理。点検期限や機器の状態が埋もれず、QRコードから点検入力もスムーズです。</p>
           <ul class="tags"><li>機器台帳</li><li>月単位の点検計画</li><li>点検期限の表示</li><li>QRコードから入力</li></ul>
         </div>
+        <div class="shots">
+          <figure class="shot shot-pc"><img src="../assets/img/notyce-screens/05_plans-calendar_pc.webp" alt="NOTYCEの点検計画カレンダー画面（PC）。機器ごとに1月から12月までの定期点検の予定と実施状況が並んでいる" width="1440" height="900" loading="lazy" decoding="async"></figure>
+          <figure class="shot shot-sp"><img src="../assets/img/notyce-screens/02_devices_sp.webp" alt="NOTYCEの機器一覧画面（スマホ）。機器番号・分類・型式などで絞り込める台帳" width="585" height="1266" loading="lazy" decoding="async"></figure>
+        </div>
       </article>
       <article class="feature" aria-labelledby="f2">
         <div class="feature-side">
@@ -123,6 +127,10 @@
           <h3 id="f2">現場の記録がスマホで完結し、共有できる</h3>
           <p>点検・故障修理・貸出返却・消耗品アラート・写真撮影をその場で記録。業務予定はカレンダーで色分けし、やりかけの仕事も「対応中／返答待ち」で見える化。情報が必要な人へ届きます。</p>
           <ul class="tags"><li>点検・修理・貸出返却</li><li>消耗品アラート</li><li>写真の記録</li><li>色分けカレンダー</li><li>対応中／返答待ち</li></ul>
+        </div>
+        <div class="shots">
+          <figure class="shot shot-pc"><img src="../assets/img/notyce-screens/12_board_pc.webp" alt="NOTYCEの掲示板画面（PC）。機器の使用中止や期限などの連絡が付箋で貼られている" width="1440" height="900" loading="lazy" decoding="async"></figure>
+          <figure class="shot shot-sp"><img src="../assets/img/notyce-screens/07_kiosk_sp.webp" alt="NOTYCEの貸出返却画面（スマホ）。「貸出」「返却」の大きなボタンだけが並ぶ現場端末用の画面" width="585" height="1266" loading="lazy" decoding="async"></figure>
         </div>
       </article>
       <article class="feature" aria-labelledby="f3">
@@ -137,7 +145,49 @@
         </div>
       </article>
     </div>
-    <p class="small" style="margin-top:20px">※ ISO/IEC 27001 の管理策を参考に設計・運用しているもので、第三者認証を取得しているものではありません。</p>
+    <p class="small" style="margin-top:20px">※ 画面はデモ用の架空データで撮影しています。施設名・数値は実在のものではありません。<br>※ ISO/IEC 27001 の管理策を参考に設計・運用しているもので、第三者認証を取得しているものではありません。</p>
+  </div>
+</section>
+
+<!-- 画面紹介（素材：medical-equipment-manager の docs/営業/screenshots。画面内の文字・数値は加工していない） -->
+<section aria-labelledby="screens-title">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow ny">SCREENS</span>
+      <h2 id="screens-title" class="section-title">NOTYCEの画面</h2>
+      <p class="section-lead">実際の画面です。PCでもスマホでも同じ内容を確認・入力できます。</p>
+    </div>
+    <div class="screen-grid">
+      <figure class="screen-card">
+        <picture>
+          <source media="(max-width: 720px)" srcset="../assets/img/notyce-screens/03_maintenance_sp.webp" width="585" height="1266">
+          <img src="../assets/img/notyce-screens/03_maintenance_pc.webp" alt="NOTYCEのメンテナンス履歴画面。日付・種別・機器・内容の一覧" width="1440" height="900" loading="lazy" decoding="async">
+        </picture>
+        <figcaption><strong>メンテナンス履歴</strong>定期点検・故障修理・部品交換の記録を、日付・機器・内容ごとに一覧で確認できます。</figcaption>
+      </figure>
+      <figure class="screen-card">
+        <picture>
+          <source media="(max-width: 720px)" srcset="../assets/img/notyce-screens/04_inspection_sp.webp" width="585" height="1266">
+          <img src="../assets/img/notyce-screens/04_inspection_pc.webp" alt="NOTYCEの定期点検一覧画面。予定日・状態（合格・不合格）・点検入力ボタンが並ぶ" width="1440" height="900" loading="lazy" decoding="async">
+        </picture>
+        <figcaption><strong>定期点検</strong>点検予定の機器が並び、そこから点検結果を入力します。合格・不合格も一覧で分かります。</figcaption>
+      </figure>
+      <figure class="screen-card">
+        <picture>
+          <source media="(max-width: 720px)" srcset="../assets/img/notyce-screens/06_lending_sp.webp" width="585" height="1266">
+          <img src="../assets/img/notyce-screens/06_lending_pc.webp" alt="NOTYCEの貸出・返却履歴画面。貸出日・機器・貸出部署・状態の一覧" width="1440" height="900" loading="lazy" decoding="async">
+        </picture>
+        <figcaption><strong>貸出・返却</strong>どの機器を、いつ、どの部署に貸し出しているかを記録し、返却までを追えます。</figcaption>
+      </figure>
+      <figure class="screen-card">
+        <picture>
+          <source media="(max-width: 720px)" srcset="../assets/img/notyce-screens/10_analysis_sp.webp" width="585" height="1266">
+          <img src="../assets/img/notyce-screens/10_analysis_pc.webp" alt="NOTYCEの分析画面。KPIサマリーと分類別の稼働率表" width="1440" height="900" loading="lazy" decoding="async">
+        </picture>
+        <figcaption><strong>分析</strong>期間を指定して、管理台数・貸出件数・点検実施率・稼働率などを集計します。</figcaption>
+      </figure>
+    </div>
+    <p class="small demo-note">※ 画面はデモ用の架空データで撮影しています。画面に表示される施設名・機器の台数・数値は実在のものではありません。</p>
   </div>
 </section>
 
