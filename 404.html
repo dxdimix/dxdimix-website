@@ -3,24 +3,31 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffffff">
 <title>ページが見つかりません｜DimiX</title>
 <meta name="description" content="お探しのページは見つかりませんでした。">
 <meta name="robots" content="noindex">
 <link rel="icon" href="/assets/img/dimix_icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap">
 <link rel="stylesheet" href="/assets/css/style.css">
+<script src="/assets/js/site.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">本文へ移動</a>
 <header class="site-header">
   <div class="container">
     <a class="logo" href="/index.html"><img src="/assets/img/dimix_logo.png" alt="DimiX トップページ" width="124" height="40"></a>
-    <a class="header-cta" href="/contact.html">お問い合わせ</a>
-    <nav class="nav" aria-label="メインメニュー">
-      <a href="/index.html">トップ</a>
-      <a href="/services/notyce.html">NOTYCE</a>
-      <a href="/services/medicli.html">メディクリ</a>
-      <a href="/about.html">会社情報</a>
-      <a class="nav-cta" href="/contact.html">お問い合わせ</a>
+    <a class="btn btn-primary btn-sm header-cta" href="/contact.html">お問い合わせ</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><span class="menu-icon" aria-hidden="true"><span></span></span><span class="menu-label">メニュー</span></button>
+    <nav class="nav" id="site-nav" aria-label="メインメニュー">
+      <ul>
+        <li><a href="/services/notyce.html">NOTYCE<small>医療機器管理システム</small></a></li>
+        <li><a href="/services/medicli.html">メディクリ<small>医療特化型動画編集</small></a></li>
+        <li><a href="/about.html">会社情報<small>代表者・所在地</small></a></li>
+      </ul>
+      <a class="btn btn-primary btn-sm nav-cta" href="/contact.html">お問い合わせ</a>
     </nav>
   </div>
 </header>
@@ -30,17 +37,27 @@
 </div></section></main>
 <footer class="site-footer">
   <div class="container">
-    <div>
-      <img src="/assets/img/dimix_wordmark_white.png" alt="DimiX" width="112" height="44">
+    <div class="f-brand">
+      <img src="/assets/img/dimix_wordmark_white.png" alt="DimiX" width="112" height="44" loading="lazy">
+      <p>臨床工学技士として医療現場で働いてきた経験をもとに、医療機関の業務を支えるサービスをつくっています。</p>
     </div>
-    <nav class="footer-nav" aria-label="フッターメニュー">
-      <a href="/index.html">トップ</a>
-      <a href="/services/notyce.html">NOTYCE</a>
-      <a href="/services/medicli.html">メディクリ</a>
-      <a href="/about.html">会社情報</a>
-      <a href="/contact.html">お問い合わせ</a>
+    <nav aria-label="サービス">
+      <h2>SERVICE</h2>
+      <ul>
+        <li><a href="/services/notyce.html">NOTYCE（医療機器管理システム）</a></li>
+        <li><a href="/services/medicli.html">メディクリ（医療特化型動画編集）</a></li>
+        <li><a href="/services/medicli.html#pricing">メディクリの料金プラン</a></li>
+      </ul>
     </nav>
-    <div class="copyright">&copy; 2026 DimiX</div>
+    <nav aria-label="会社">
+      <h2>COMPANY</h2>
+      <ul>
+        <li><a href="/index.html">トップページ</a></li>
+        <li><a href="/about.html">会社情報</a></li>
+        <li><a href="/contact.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <div class="copyright"><span>&copy; 2026 DimiX</span><span>岡山県総社市</span></div>
   </div>
 </footer>
 </body>

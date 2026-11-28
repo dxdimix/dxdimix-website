@@ -2,7 +2,7 @@
  * メディクリの料金データ（料金を変えるときは、このファイルの「料金データ」だけを書き換える）
  * 参照元：メディクリ業者様用プレゼン資料 2026年11月改訂版
  * 料金シミュレーター（dxdimix/medicri-price-simulator）の値とも必ずそろえること。
- * 表示先：services/medicli.html の data-pricing="…" が付いた場所
+ * 表示先：services/medicli.html と index.html の data-pricing="…" が付いた場所
  */
 (function () {
   'use strict';
@@ -141,6 +141,9 @@
       else if (kind === 'compare') renderCompare(el);
       else if (kind === 'options') renderSimple(el, OPTIONS, '追加制作');
       else if (kind === 'surcharges') renderSimple(el, SURCHARGES, '割増・追加料金');
+      // トップページ用：いちばん安い料金（ライトプランの最短の長さ）を表示する
+      else if (kind === 'from') el.textContent = yen(PLANS[0].prices[0]);
+      else if (kind === 'from-unit') el.textContent = '（' + TAX + '）から／完成動画' + LENGTHS[0] + '・' + PLANS[0].name;
     });
   }
 

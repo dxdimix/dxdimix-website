@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffffff">
 <title>NOTYCE（ノーティス）｜医療機器管理システム｜DimiX</title>
 <meta name="description" content="NOTYCE（ノーティス）は、医療機器の点検・修理・貸出・返却・保守・台帳管理を一元化するクラウドシステムです。臨床工学技士の現場経験から生まれ、初期設定から運用まで伴走します。患者情報は保存しない設計です。">
 <meta property="og:title" content="NOTYCE（ノーティス）｜医療機器管理システム｜DimiX">
@@ -14,79 +15,69 @@
 <meta property="og:locale" content="ja_JP">
 <link rel="canonical" href="https://dxdimix.com/services/notyce.html">
 <link rel="icon" href="../assets/img/notyce_icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap">
 <link rel="stylesheet" href="../assets/css/style.css">
+<script src="../assets/js/site.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">本文へ移動</a>
 <header class="site-header">
   <div class="container">
     <a class="logo" href="../index.html"><img src="../assets/img/dimix_logo.png" alt="DimiX トップページ" width="124" height="40"></a>
-    <a class="header-cta" href="../contact.html?service=notyce">お問い合わせ</a>
-    <nav class="nav" aria-label="メインメニュー">
-      <a href="../index.html">トップ</a>
-      <a href="notyce.html" aria-current="page">NOTYCE</a>
-      <a href="medicli.html">メディクリ</a>
-      <a href="../about.html">会社情報</a>
-      <a class="nav-cta" href="../contact.html?service=notyce">お問い合わせ</a>
+    <a class="btn btn-primary btn-sm header-cta" href="../contact.html?service=notyce">お問い合わせ</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><span class="menu-icon" aria-hidden="true"><span></span></span><span class="menu-label">メニュー</span></button>
+    <nav class="nav" id="site-nav" aria-label="メインメニュー">
+      <ul>
+        <li><a href="../services/notyce.html" aria-current="page">NOTYCE<small>医療機器管理システム</small></a></li>
+        <li><a href="../services/medicli.html">メディクリ<small>医療特化型動画編集</small></a></li>
+        <li><a href="../about.html">会社情報<small>代表者・所在地</small></a></li>
+      </ul>
+      <a class="btn btn-primary btn-sm nav-cta" href="../contact.html?service=notyce">お問い合わせ</a>
     </nav>
   </div>
 </header>
 
 <main id="main">
 <section class="product-hero notyce" aria-labelledby="page-title">
+  <div class="orbit" aria-hidden="true"><svg viewBox="0 0 600 600" focusable="false"><defs><linearGradient id="og1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a8fd8"/><stop offset=".55" stop-color="#4c55c8"/><stop offset="1" stop-color="#6a4cc9"/></linearGradient></defs><circle cx="300" cy="300" r="250" fill="none" stroke="url(#og1)" stroke-opacity=".32" stroke-width="1.2"/><circle cx="300" cy="300" r="186" fill="none" stroke="url(#og1)" stroke-opacity=".22" stroke-width="1" stroke-dasharray="2 9"/><path d="M123 477A250 250 0 0 0 550 300A300 262 0 0 1 123 477Z" fill="url(#og1)" fill-opacity=".18"/><circle cx="550" cy="300" r="5" fill="#6a4cc9"/><circle cx="114" cy="186" r="3.5" fill="#2a8fd8" fill-opacity=".7"/></svg></div>
   <div class="container">
     <div>
+      <ol class="breadcrumb"><li><a href="../index.html">トップ</a></li><li aria-current="page">NOTYCE</li></ol>
       <img class="logo-lg" src="../assets/img/notyce_logo.png" alt="NOTYCE（ノーティス）" width="300" height="91">
       <p class="product-name">医療機器管理システム</p>
-      <h1 id="page-title">医療機器管理を、<br>もっと簡単に。もっと安全に。</h1>
+      <h1 id="page-title">医療機器管理を、<br><span class="ib">もっと簡単に。</span><span class="ib">もっと安全に。</span></h1>
       <p class="lead">私だけの気づきから、みんなの気づきへ。<br>点検・修理・貸出・台帳を一つにまとめ、現場の“気づき”を必要な人へ届けます。</p>
       <div class="btn-row">
-        <a class="btn btn-ny" href="../contact.html?service=notyce">お問い合わせ<svg class="icon" aria-hidden="true"><use href="../assets/img/icons.svg#i-arrow"/></svg></a>
+        <a class="btn btn-ny" href="../contact.html?service=notyce">導入の相談をする<svg class="icon" aria-hidden="true"><use href="../assets/img/icons.svg#i-arrow"/></svg></a>
         <a class="btn btn-ny btn-outline" href="#features">主な機能を見る</a>
       </div>
     </div>
-    <div class="visual-wrap" aria-hidden="true">
-      <!-- 機器の状態が一目でわかる画面のイメージ（実際の画面とは異なります） -->
-      <svg class="visual" viewBox="0 0 480 360" role="presentation">
-        <rect x="10" y="20" width="460" height="320" rx="18" fill="#fff" stroke="#dbe4ee" stroke-width="2"/>
-        <rect x="10" y="20" width="460" height="44" rx="18" fill="#141c52"/>
-        <rect x="10" y="46" width="460" height="18" fill="#141c52"/>
-        <text x="32" y="48" font-family="sans-serif" font-size="14" font-weight="700" fill="#fff">機器の状況</text>
-        <g font-family="sans-serif">
-          <rect x="30" y="82" width="130" height="70" rx="12" fill="#e8f1fb"/>
-          <text x="44" y="104" font-size="11" fill="#4f5f73">今月の点検予定</text>
-          <text x="44" y="138" font-size="26" font-weight="700" fill="#141c52">48<tspan font-size="12"> 台</tspan></text>
-          <rect x="175" y="82" width="130" height="70" rx="12" fill="#fdf0e1"/>
-          <text x="189" y="104" font-size="11" fill="#4f5f73">期限が近い</text>
-          <text x="189" y="138" font-size="26" font-weight="700" fill="#8a4b0f">5<tspan font-size="12"> 台</tspan></text>
-          <rect x="320" y="82" width="130" height="70" rx="12" fill="#e3f4f3"/>
-          <text x="334" y="104" font-size="11" fill="#4f5f73">貸出中</text>
-          <text x="334" y="138" font-size="26" font-weight="700" fill="#0b5c58">12<tspan font-size="12"> 台</tspan></text>
-          <!-- 一覧 -->
-          <g font-size="12" fill="#14233a">
-            <rect x="30" y="170" width="420" height="40" rx="8" fill="#f4f8fc"/>
-            <circle cx="50" cy="190" r="6" fill="#e8813a"/><text x="66" y="194">輸液ポンプ No.12</text><text x="250" y="194" fill="#4f5f73">定期点検</text><text x="440" y="194" text-anchor="end" fill="#8a4b0f" font-weight="700">期限 3日後</text>
-            <rect x="30" y="218" width="420" height="40" rx="8" fill="#f4f8fc"/>
-            <circle cx="50" cy="238" r="6" fill="#1565c0"/><text x="66" y="242">人工呼吸器 No.2</text><text x="250" y="242" fill="#4f5f73">修理</text><text x="440" y="242" text-anchor="end" fill="#1546a8" font-weight="700">返答待ち</text>
-            <rect x="30" y="266" width="420" height="40" rx="8" fill="#f4f8fc"/>
-            <circle cx="50" cy="286" r="6" fill="#0b8a86"/><text x="66" y="290">シリンジポンプ No.4</text><text x="250" y="290" fill="#4f5f73">貸出</text><text x="440" y="290" text-anchor="end" fill="#0b5c58" font-weight="700">5階東病棟</text>
-          </g>
-        </g>
-      </svg>
+    <div class="visual-wrap">
+      <div class="ph-shots">
+        <figure class="shot shot-pc"><img src="../assets/img/notyce-screens/01_dashboard_pc.webp" alt="NOTYCEのダッシュボード画面（PC）。管理台数・貸出中・待機中・点検完了率と、今日の業務予定や期限の近い点検を件数つきで並べた「今日のやることリスト」" width="1440" height="900" fetchpriority="high" decoding="async"></figure>
+        <figure class="shot shot-sp"><img src="../assets/img/notyce-screens/07_kiosk_sp.webp" alt="NOTYCEの貸出返却画面（スマホ）。「貸出」「返却」の大きなボタン" width="585" height="1266" decoding="async"></figure>
+      </div>
+      <p class="ph-note">※ 画面はデモ用の架空データです。施設名・数値は実在しません。</p>
     </div>
   </div>
 </section>
 
+<nav class="page-nav" aria-label="このページの目次">
+  <div class="container"><ul><li><a href="#overview">概要</a></li><li><a href="#dashboard">ダッシュボード</a></li><li><a href="#quick">業務の記録</a></li><li><a href="#features">主な機能</a></li><li><a href="#screens">画面</a></li><li><a href="#analysis">分析</a></li><li><a href="#flow">導入の流れ</a></li><li class="pn-cta-li" style="margin-left:auto"><a class="pn-cta" href="../contact.html?service=notyce">導入の相談 →</a></li></ul></div>
+</nav>
+
 <!-- 概要 -->
-<section aria-labelledby="overview-title">
+<section id="overview" aria-labelledby="overview-title">
   <div class="container narrow">
-    <div class="section-head">
+    <div class="section-head reveal">
       <span class="eyebrow ny">OVERVIEW</span>
-      <h2 id="overview-title" class="section-title">一人の“気づき”を、チームの安全に。</h2>
+      <h2 id="overview-title" class="section-title"><span class="ib">一人の“気づき”を、</span><span class="ib">チームの安全に。</span></h2>
     </div>
     <p>NOTYCEは、医療機器の点検・修理・貸出・返却・保守・台帳管理を一元化するクラウドシステムです。機器ごとに履歴が時系列で残り、点検期限や対応状況が一目でわかります。</p>
     <p>一人の“気づき”を個人で抱えず、必要な人へ共有することで、医療機器管理を「もっと簡単に、もっと安全に」します。初期設定・データ移行・運用サポートは業務委託で代行します。</p>
-    <ul class="assure" aria-label="安心してお使いいただくために" style="margin-top:32px">
+    <ul class="assure reveal" aria-label="安心してお使いいただくために" style="margin-top:32px">
       <li><div class="icon-wrap ny"><svg class="icon" aria-hidden="true"><use href="../assets/img/icons.svg#i-shield"/></svg></div><div><strong>患者情報は保存しない設計</strong><span>扱うのは機器と業務の情報です。</span></div></li>
       <li><div class="icon-wrap ny"><svg class="icon" aria-hidden="true"><use href="../assets/img/icons.svg#i-phone"/></svg></div><div><strong>スマホ・PCで使える</strong><span>現場でその場で記録できます。</span></div></li>
       <li><div class="icon-wrap ny"><svg class="icon" aria-hidden="true"><use href="../assets/img/icons.svg#i-users"/></svg></div><div><strong>導入から運用まで伴走</strong><span>初期設定やデータ移行も代行します。</span></div></li>
@@ -95,14 +86,14 @@
 </section>
 
 <!-- ダッシュボード：やることがすぐわかる -->
-<section class="soft" aria-labelledby="dash-title">
+<section id="dashboard" class="tint" aria-labelledby="dash-title">
   <div class="container">
-    <div class="section-head">
+    <div class="section-head reveal">
       <span class="eyebrow ny">DASHBOARD</span>
-      <h2 id="dash-title" class="section-title">開いてすぐ、今日やることがわかる</h2>
+      <h2 id="dash-title" class="section-title"><span class="ib">開いてすぐ、</span><span class="ib">今日やることがわかる</span></h2>
       <p class="section-lead">ダッシュボードに、その日に対応が必要なことが件数つきで並びます。<br>項目を押すと中身を確認でき、そこから一覧も開けます。担当者で絞り込むこともできます。</p>
     </div>
-    <ul class="dash-points">
+    <ul class="dash-points reveal">
       <li><strong>今日の予定</strong>今日の業務予定、貸出中の人工呼吸器のラウンド、期限が来た交換部品</li>
       <li><strong>点検の期限</strong>今月が期限の定期点検、期限を過ぎた定期点検、返却棚で使用前点検を待つ機器</li>
       <li><strong>異常と継続中の業務</strong>点検で異常が出た機器と、対応中・返答待ち・保留の業務（完了にするまで表示）</li>
@@ -116,14 +107,14 @@
 </section>
 
 <!-- 予定外の業務もその場で記録（素材 15・16） -->
-<section aria-labelledby="work-title">
+<section id="quick" aria-labelledby="work-title">
   <div class="container">
-    <div class="section-head">
+    <div class="section-head reveal">
       <span class="eyebrow ny">QUICK ENTRY</span>
-      <h2 id="work-title" class="section-title">予定外の業務も、終わったその場で記録できる</h2>
+      <h2 id="work-title" class="section-title"><span class="ib">予定外の業務も、</span><span class="ib">終わったその場で記録できる</span></h2>
       <p class="section-lead">業務登録は、状態が「実施済」、日付が今日の状態で開きます。<br>タイトルと実施者を選んで「登録する」を押せば、その日の実施記録になります。</p>
     </div>
-    <ul class="dash-points">
+    <ul class="dash-points reveal">
       <li><strong>臨時の業務もすぐ残せる</strong>前もって予定を作っていない業務も、実施した記録としてそのまま登録できます。</li>
       <li><strong>⭐ ショートカット</strong>よく行う業務を「ショートカットに保存」しておくと、どの画面からでも内容が入った状態で登録画面を開けます。</li>
       <li><strong>予定として登録も可能</strong>状態を「未実施（予定）」にして担当者を選ぶと、その人のダッシュボードの「今日のやることリスト」に表示されます。</li>
@@ -141,15 +132,15 @@
 </section>
 
 <!-- 主要機能 -->
-<section id="features" class="soft" aria-labelledby="features-title">
+<section id="features" class="warm" aria-labelledby="features-title">
   <div class="container">
-    <div class="section-head">
+    <div class="section-head reveal">
       <span class="eyebrow ny">FEATURES</span>
       <h2 id="features-title" class="section-title">NOTYCEの主な機能</h2>
       <p class="section-lead">「気づける」「つながる」「守る」の3つで、医療機器管理を支えます。</p>
     </div>
     <div class="features">
-      <article class="feature" aria-labelledby="f1">
+      <article class="feature reveal" aria-labelledby="f1">
         <div class="feature-side">
           <div class="icon-wrap ny"><svg class="icon" aria-hidden="true"><use href="../assets/img/icons.svg#i-bell"/></svg></div>
           <div><div class="feature-no">FEATURE 01</div><div class="feature-verb">気づける</div></div>
@@ -164,13 +155,13 @@
           <figure class="shot shot-sp"><img src="../assets/img/notyce-screens/02_devices_sp.webp" alt="NOTYCEの機器一覧画面（スマホ）。機器番号・分類・型式などで絞り込める台帳" width="585" height="1266" loading="lazy" decoding="async"></figure>
         </div>
       </article>
-      <article class="feature" aria-labelledby="f2">
+      <article class="feature reveal" aria-labelledby="f2">
         <div class="feature-side">
           <div class="icon-wrap ny"><svg class="icon" aria-hidden="true"><use href="../assets/img/icons.svg#i-share"/></svg></div>
           <div><div class="feature-no">FEATURE 02</div><div class="feature-verb">つながる</div></div>
         </div>
         <div>
-          <h3 id="f2">現場の記録がスマホで完結し、共有できる</h3>
+          <h3 id="f2"><span class="ib">現場の記録がスマホで完結し、</span><span class="ib">共有できる</span></h3>
           <p>点検・故障修理・貸出返却・消耗品アラート・写真撮影をその場で記録。業務予定はカレンダーで色分けし、やりかけの仕事も「対応中／返答待ち」で見える化。情報が必要な人へ届きます。</p>
           <ul class="tags"><li>点検・修理・貸出返却</li><li>消耗品アラート</li><li>写真の記録</li><li>色分けカレンダー</li><li>対応中／返答待ち</li></ul>
         </div>
@@ -179,7 +170,7 @@
           <figure class="shot shot-sp"><img src="../assets/img/notyce-screens/07_kiosk_sp.webp" alt="NOTYCEの貸出返却画面（スマホ）。「貸出」「返却」の大きなボタンだけが並ぶ現場端末用の画面" width="585" height="1266" loading="lazy" decoding="async"></figure>
         </div>
       </article>
-      <article class="feature" aria-labelledby="f3">
+      <article class="feature reveal" aria-labelledby="f3">
         <div class="feature-side">
           <div class="icon-wrap ny"><svg class="icon" aria-hidden="true"><use href="../assets/img/icons.svg#i-shield"/></svg></div>
           <div><div class="feature-no">FEATURE 03</div><div class="feature-verb">守る</div></div>
@@ -196,29 +187,29 @@
 </section>
 
 <!-- 画面紹介（素材：medical-equipment-manager の docs/営業/screenshots。画面内の文字・数値は加工していない） -->
-<section aria-labelledby="screens-title">
+<section id="screens" aria-labelledby="screens-title">
   <div class="container">
-    <div class="section-head">
+    <div class="section-head reveal">
       <span class="eyebrow ny">SCREENS</span>
       <h2 id="screens-title" class="section-title">NOTYCEの画面</h2>
       <p class="section-lead">実際の画面です。PCでもスマホでも同じ内容を確認・入力できます。</p>
     </div>
     <div class="screen-grid cols-3">
-      <figure class="screen-card">
+      <figure class="screen-card reveal">
         <picture>
           <source media="(max-width: 720px)" srcset="../assets/img/notyce-screens/03_maintenance_sp.webp" width="585" height="1266">
           <img src="../assets/img/notyce-screens/03_maintenance_pc.webp" alt="NOTYCEのメンテナンス履歴画面。日付・種別・機器・内容の一覧" width="1440" height="900" loading="lazy" decoding="async">
         </picture>
         <figcaption><strong>メンテナンス履歴</strong>定期点検・故障修理・部品交換の記録を、日付・機器・内容ごとに一覧で確認できます。</figcaption>
       </figure>
-      <figure class="screen-card">
+      <figure class="screen-card reveal">
         <picture>
           <source media="(max-width: 720px)" srcset="../assets/img/notyce-screens/04_inspection_sp.webp" width="585" height="1266">
           <img src="../assets/img/notyce-screens/04_inspection_pc.webp" alt="NOTYCEの定期点検一覧画面。予定日・状態（合格・不合格）・点検入力ボタンが並ぶ" width="1440" height="900" loading="lazy" decoding="async">
         </picture>
         <figcaption><strong>定期点検</strong>点検予定の機器が並び、そこから点検結果を入力します。合格・不合格も一覧で分かります。</figcaption>
       </figure>
-      <figure class="screen-card">
+      <figure class="screen-card reveal">
         <picture>
           <source media="(max-width: 720px)" srcset="../assets/img/notyce-screens/06_lending_sp.webp" width="585" height="1266">
           <img src="../assets/img/notyce-screens/06_lending_pc.webp" alt="NOTYCEの貸出・返却履歴画面。貸出日・機器・貸出部署・状態の一覧" width="1440" height="900" loading="lazy" decoding="async">
@@ -231,38 +222,39 @@
 </section>
 
 <!-- 分析（素材 17〜20。17 は左のカードだけ切り出し） -->
-<section class="soft" aria-labelledby="analysis-title">
+<section id="analysis" class="dark" aria-labelledby="analysis-title">
+  <div class="orbit" aria-hidden="true"><svg viewBox="0 0 600 600" focusable="false"><defs><linearGradient id="og2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a8fd8"/><stop offset=".55" stop-color="#4c55c8"/><stop offset="1" stop-color="#6a4cc9"/></linearGradient></defs><circle cx="300" cy="300" r="250" fill="none" stroke="url(#og2)" stroke-opacity=".32" stroke-width="1.2"/><circle cx="300" cy="300" r="186" fill="none" stroke="url(#og2)" stroke-opacity=".22" stroke-width="1" stroke-dasharray="2 9"/><path d="M123 477A250 250 0 0 0 550 300A300 262 0 0 1 123 477Z" fill="url(#og2)" fill-opacity=".18"/><circle cx="550" cy="300" r="5" fill="#6a4cc9"/><circle cx="114" cy="186" r="3.5" fill="#2a8fd8" fill-opacity=".7"/></svg></div>
   <div class="container">
-    <div class="section-head">
+    <div class="section-head reveal">
       <span class="eyebrow ny">ANALYSIS</span>
-      <h2 id="analysis-title" class="section-title">記録がたまると、グラフと表で振り返れる</h2>
+      <h2 id="analysis-title" class="section-title"><span class="ib">記録がたまると、</span><span class="ib">グラフと表で振り返れる</span></h2>
       <p class="section-lead">期間を指定して、故障・貸出・稼働率・費用を集計します。<br>日々の記録から自動で集計されるので、集計表を別に作る必要はありません。</p>
     </div>
     <div class="analysis-grid">
-      <figure class="screen-card">
+      <figure class="screen-card reveal">
         <picture>
           <img src="../assets/img/notyce-screens/19_analysis-lending_pc.webp" alt="NOTYCEの貸出分析。曜日別と時間帯別の貸出件数の棒グラフ" width="960" height="755" loading="lazy" decoding="async">
         </picture>
         <figcaption><strong>貸出分析</strong>曜日別・時間帯別の貸出件数</figcaption>
       </figure>
-      <figure class="screen-card">
+      <figure class="screen-card reveal">
         <picture>
           <img src="../assets/img/notyce-screens/17_analysis-utilization_pc.webp" alt="NOTYCEの稼働率分析。大分類別と機種別の使用台数・稼働率の表" width="960" height="864" loading="lazy" decoding="async">
         </picture>
         <figcaption><strong>稼働率</strong>大分類別・機種別に、期間内に貸出のあった機器の割合</figcaption>
       </figure>
-      <figure class="screen-card">
+      <figure class="screen-card reveal">
         <picture>
           <img src="../assets/img/notyce-screens/18a_analysis-failure-pie_pc.webp" alt="NOTYCEの故障分析。故障理由別内訳の円グラフ（落下・衝撃、水濡れ、原因不明、経年劣化、操作ミス）" width="960" height="386" loading="lazy" decoding="async">
         </picture>
         <figcaption><strong>故障分析</strong>故障理由の内訳と、機種別・メーカー別の故障件数・故障率</figcaption>
       </figure>
-      <figure class="screen-card">
+      <figure class="screen-card reveal">
         <picture>
           <img src="../assets/img/notyce-screens/18b_analysis-failure-table_pc.webp" alt="NOTYCEの故障分析。機種別・メーカー別の故障件数と故障率の表" width="960" height="864" loading="lazy" decoding="async">
         </picture>
       </figure>
-      <figure class="screen-card wide">
+      <figure class="screen-card wide reveal">
         <picture>
           <img src="../assets/img/notyce-screens/20_analysis-cost_pc.webp" alt="NOTYCEの月次コスト推移。点検費用と修理費用の月ごとの合計の棒グラフ" width="1440" height="290" loading="lazy" decoding="async">
         </picture>
@@ -274,13 +266,13 @@
 </section>
 
 <!-- 対象 -->
-<section aria-labelledby="target-title">
+<section id="target" aria-labelledby="target-title">
   <div class="container">
-    <div class="section-head">
+    <div class="section-head reveal">
       <span class="eyebrow ny">FOR</span>
       <h2 id="target-title" class="section-title">こんな施設・ご担当者さまに</h2>
     </div>
-    <ul class="check-list narrow">
+    <ul class="check-list narrow reveal">
       <li><svg class="icon" aria-hidden="true"><use href="../assets/img/icons.svg#i-check"/></svg><span>病院・クリニックの臨床工学部門／医療機器管理のご担当</span></li>
       <li><svg class="icon" aria-hidden="true"><use href="../assets/img/icons.svg#i-check"/></svg><span>輸液ポンプ・シリンジポンプなど機器を多数保有する施設</span></li>
       <li><svg class="icon" aria-hidden="true"><use href="../assets/img/icons.svg#i-check"/></svg><span>少人数で機器管理を回していて、紙・Excelを見直したい施設</span></li>
@@ -290,14 +282,14 @@
 </section>
 
 <!-- 導入の流れ -->
-<section class="soft" aria-labelledby="flow-title">
+<section id="flow" class="tint" aria-labelledby="flow-title">
   <div class="container">
-    <div class="section-head">
+    <div class="section-head reveal">
       <span class="eyebrow ny">FLOW</span>
       <h2 id="flow-title" class="section-title">導入の流れ</h2>
       <p class="section-lead">初期設定から本稼働後まで、私たちが伴走します。</p>
     </div>
-    <ol class="steps ny">
+    <ol class="steps ny reveal">
       <li><div class="icon-wrap ny"><svg class="icon" aria-hidden="true"><use href="../assets/img/icons.svg#i-chat"/></svg></div><div class="step-no">STEP 01</div><h3>お問い合わせ・ヒアリング</h3><p>機器台数・運用のしかたを確認します。</p></li>
       <li><div class="icon-wrap ny"><svg class="icon" aria-hidden="true"><use href="../assets/img/icons.svg#i-settings"/></svg></div><div class="step-no">STEP 02</div><h3>アカウント発行・初期設定</h3><p>私たちが代行し、すぐ使える状態にします。</p></li>
       <li><div class="icon-wrap ny"><svg class="icon" aria-hidden="true"><use href="../assets/img/icons.svg#i-database"/></svg></div><div class="step-no">STEP 03</div><h3>機器台帳・マスタ登録</h3><p>台帳の写真からまとめて取り込むこともできます。</p></li>
@@ -309,28 +301,41 @@
 </main>
 
 <section class="cta ny" aria-labelledby="cta-title">
+  <div class="orbit" aria-hidden="true"><svg viewBox="0 0 600 600" focusable="false"><defs><linearGradient id="og3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a8fd8"/><stop offset=".55" stop-color="#4c55c8"/><stop offset="1" stop-color="#6a4cc9"/></linearGradient></defs><circle cx="300" cy="300" r="250" fill="none" stroke="url(#og3)" stroke-opacity=".32" stroke-width="1.2"/><circle cx="300" cy="300" r="186" fill="none" stroke="url(#og3)" stroke-opacity=".22" stroke-width="1" stroke-dasharray="2 9"/><path d="M123 477A250 250 0 0 0 550 300A300 262 0 0 1 123 477Z" fill="url(#og3)" fill-opacity=".18"/><circle cx="550" cy="300" r="5" fill="#6a4cc9"/><circle cx="114" cy="186" r="3.5" fill="#2a8fd8" fill-opacity=".7"/></svg></div>
   <div class="container">
-    <h2 id="cta-title">気づきをつなぎ、医療の安全を支える。</h2>
+    <span class="eyebrow">Contact</span>
+    <h2 id="cta-title"><span class="ib">気づきをつなぎ、</span><span class="ib">医療の安全を支える。</span></h2>
     <p>機器台数や今の管理方法をお聞かせください。NOTYCEで何ができるか、具体的にご説明します。</p>
     <div class="btn-row">
-      <a class="btn btn-white" href="../contact.html?service=notyce">お問い合わせ<svg class="icon" aria-hidden="true"><use href="../assets/img/icons.svg#i-arrow"/></svg></a>
+      <a class="btn btn-white" href="../contact.html?service=notyce">NOTYCEの導入を相談する<svg class="icon" aria-hidden="true"><use href="../assets/img/icons.svg#i-arrow"/></svg></a>
     </div>
   </div>
 </section>
 
+<div class="mobile-cta"><a class="btn btn-primary" href="../contact.html?service=notyce">NOTYCEの導入を相談する<svg class="icon" aria-hidden="true"><use href="../assets/img/icons.svg#i-arrow"/></svg></a></div>
 <footer class="site-footer">
   <div class="container">
-    <div>
-      <img src="../assets/img/dimix_wordmark_white.png" alt="DimiX" width="112" height="44">
+    <div class="f-brand">
+      <img src="../assets/img/dimix_wordmark_white.png" alt="DimiX" width="112" height="44" loading="lazy">
+      <p>臨床工学技士として医療現場で働いてきた経験をもとに、医療機関の業務を支えるサービスをつくっています。</p>
     </div>
-    <nav class="footer-nav" aria-label="フッターメニュー">
-      <a href="../index.html">トップ</a>
-      <a href="notyce.html">NOTYCE</a>
-      <a href="medicli.html">メディクリ</a>
-      <a href="../about.html">会社情報</a>
-      <a href="../contact.html">お問い合わせ</a>
+    <nav aria-label="サービス">
+      <h2>SERVICE</h2>
+      <ul>
+        <li><a href="../services/notyce.html">NOTYCE（医療機器管理システム）</a></li>
+        <li><a href="../services/medicli.html">メディクリ（医療特化型動画編集）</a></li>
+        <li><a href="../services/medicli.html#pricing">メディクリの料金プラン</a></li>
+      </ul>
     </nav>
-    <div class="copyright">&copy; 2026 DimiX</div>
+    <nav aria-label="会社">
+      <h2>COMPANY</h2>
+      <ul>
+        <li><a href="../index.html">トップページ</a></li>
+        <li><a href="../about.html">会社情報</a></li>
+        <li><a href="../contact.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <div class="copyright"><span>&copy; 2026 DimiX</span><span>岡山県総社市</span></div>
   </div>
 </footer>
 </body>

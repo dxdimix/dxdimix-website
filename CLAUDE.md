@@ -23,7 +23,8 @@ DimiX の公式ホームページ（https://dxdimix.com）。
 | `about.html` | 会社情報 |
 | `contact.html` | お問い合わせ（メール。`?service=notyce|medicli&plan=light|standard|premium` で件名と本文のひな形が入る） |
 | `404.html` | ページが見つからない時の表示（パスは `/` 始まり） |
-| `assets/css/style.css` | 全ページ共通のデザイン。色は先頭の `:root` で変更 |
+| `assets/css/style.css` | 全ページ共通のデザイン。色・文字・余白・角丸・影は先頭の `:root` のトークンで管理。考え方とルールは `docs/デザインシステム.md` |
+| `assets/js/site.js` | 全ページ共通の動き（スマホのメニュー開閉、スクロールで表示、スマホ下部の固定ボタン、ページ内目次の現在地） |
 | `assets/js/medicli-pricing.js` | **メディクリの料金はここだけで管理**（プラン・長さ別料金・比較表・オプション・割増） |
 | `assets/img/icons.svg` | 線のアイコン集（`<use href="…icons.svg#i-bell"/>` で使う） |
 | `assets/img/` | ロゴ（DimiX・メディクリ・NOTYCE）。NOTYCE の元データは OneDrive `医療機器メンテ代行事業/NOTYCE_brand_kit` |
@@ -37,7 +38,9 @@ DimiX の公式ホームページ（https://dxdimix.com）。
 - 文章は比喩や気取った言い回しを避け、具体的に書く。
 
 ## 編集ルール
-- ヘッダーとフッターは各 HTML に同じものを書いている。メニューを変える時は全ページ（404.html を含む）を揃えて直す。スマホ用の `header-cta`（ロゴ横のお問い合わせボタン）も忘れずに。
+- ヘッダーとフッターは各 HTML に同じものを書いている。メニューを変える時は全ページ（404.html を含む）を揃えて直す。スマホ用の `header-cta`（ロゴ横のお問い合わせボタン）と、メニューボタン（`.menu-btn`）も忘れずに。
+- 新しい色・影・角丸を直接書かない。`docs/デザインシステム.md` のトークンとコンポーネントを使う。
+- 見出しは「、」「。」ごとに `<span class="ib">` で包む（語の途中で改行しないため）。
 - `services/` 配下のページは CSS や他ページへのパスに `../` が付く。
 - まだ中身が決まっていない箇所は `<span class="todo">（…）</span>`（黄色表示）にする。`grep -rn 'class="todo"' .` で残りを確認できる。
 - `main` に push すると 1〜2 分で本番に反映される。大きな変更はブランチを切って確認してから `main` に入れる。
